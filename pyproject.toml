@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moseslukegeomap"
+version = "0.1.0"
+description = "Turn raw GIS files (shapefile, GeoJSON, GeoPackage) into clean, publication-ready maps with automatic labels, legend, scale bar and north arrow."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Moses Luke" }]
+keywords = ["gis", "mapping", "shapefile", "choropleth", "cartography", "epidemiology", "public health", "labels"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Intended Audience :: Science/Research",
+]
+dependencies = [
+  "geopandas>=0.14",
+  "pyogrio>=0.7",
+  "shapely>=2.0",
+  "pyproj>=3.4",
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "mapclassify>=2.6",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.32"]
+dev = ["pytest>=7", "streamlit>=1.32"]
+
+[project.scripts]
+geomapclean = "moseslukegeomap.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Moses-L/geomapclean"
+Issues = "https://github.com/Moses-L/geomapclean/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+moseslukegeomap = ["data/*.geojson"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "geomapclean: clean, labelled maps from raw GIS files"
+type: software
+version: 0.1.0
+date-released: "2026-11-06"
+license: MIT
+repository-code: "https://github.com/Moses-L/geomapclean"
+abstract: >-
+  An open-source Python tool and web app that turns raw GIS files (zipped shapefiles,
+  GeoJSON, GeoPackage, KML) into publication-ready maps with automatic projection,
+  geometry repair, collision-free labels, classed legends, scale bar, north arrow and graticule.
+keywords: [GIS, cartography, choropleth, shapefile, public health, epidemiology, mapping]
+authors:
+  - family-names: Luke
+    given-names: Moses
+    orcid: "https://orcid.org/0000-0002-0600-6660"
