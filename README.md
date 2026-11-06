@@ -4,7 +4,9 @@
 
 [![tests](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml/badge.svg)](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml)
 
-![Nigeria geopolitical zones](examples/gallery_nigeria_zones.png)
+**Use it online, nothing to install: https://moseslukegismap.streamlit.app/**
+
+![Nigeria geopolitical zones](https://raw.githubusercontent.com/Moses-L/geomapclean/main/examples/gallery_nigeria_zones.png)
 
 Built by Moses Luke for researchers, epidemiologists and programme teams who have boundary files and numbers but do not want to spend an afternoon in desktop GIS software to get a tidy figure. The Python package is called `moseslukegeomap` and the command is `geomapclean`.
 
@@ -25,7 +27,9 @@ Built by Moses Luke for researchers, epidemiologists and programme teams who hav
 
 ## 1. Try it in two minutes
 
-You need Python 3.10 or newer. In a terminal (PowerShell on Windows):
+**Quickest:** open the live app at https://moseslukegismap.streamlit.app/, switch on the demo in the sidebar, then upload your own file. Nothing is installed.
+
+**On your own computer** (needed for confidential data): you need Python 3.10 or newer. In a terminal (PowerShell on Windows):
 
 ```bash
 pip install "moseslukegeomap[app]"
@@ -170,7 +174,7 @@ geomapclean draw nga_boundaries.zip --layer nga_admbnda_adm2_osgof_20190417.shp 
   --width 12 -o lagos.png
 ```
 
-![Lagos LGAs](examples/gallery_lagos_lgas.png)
+![Lagos LGAs](https://raw.githubusercontent.com/Moses-L/geomapclean/main/examples/gallery_lagos_lgas.png)
 
 All 20 names appear. The central, crowded LGAs get a short leader line so their names stay readable. Because the Lagos extent is wide and short, the projection and the page shape were chosen for you.
 
@@ -182,7 +186,7 @@ geomapclean draw nga_boundaries.zip --layer nga_admbnda_adm2_osgof_20190417.shp 
   --title "Nigeria: 774 Local Government Areas" --width 12 -o nigeria_lgas.png
 ```
 
-![Nigeria LGAs](examples/gallery_nigeria_lgas.png)
+![Nigeria LGAs](https://raw.githubusercontent.com/Moses-L/geomapclean/main/examples/gallery_nigeria_lgas.png)
 
 State names are drawn in bold capitals, and LGA names appear wherever they fit without crowding. The command tells you how many were left out and how to name more of them.
 
@@ -320,7 +324,7 @@ The test suite checks that no two pieces of text overlap, and the same check was
 
 ## 11. Hosting a public copy
 
-The repository contains `streamlit_app.py` and `requirements.txt`, which is what Streamlit Community Cloud needs.
+A public copy of this app runs at https://moseslukegismap.streamlit.app/. To host your own, the repository contains `streamlit_app.py` and `requirements.txt`, which is what Streamlit Community Cloud needs.
 
 1. Sign in at share.streamlit.io with your GitHub account.
 2. Choose **Create app**, select the repository `Moses-L/geomapclean`, branch `main`, and main file `streamlit_app.py`.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- README images use absolute links so they display on PyPI.
+- Link to the public web app (https://moseslukegismap.streamlit.app/) in the README, About tab and package metadata.
+
 ## 0.1.0
 
 First release.

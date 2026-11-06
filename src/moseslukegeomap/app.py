@@ -122,6 +122,7 @@ Built by **Moses Luke**, an epidemiologist and health information specialist bas
 |---|---|
 | Version | {__version__} |
 | Python package | `moseslukegeomap` (command: `geomapclean`) |
+| Web app | https://moseslukegismap.streamlit.app/ |
 | Source code | https://github.com/Moses-L/geomapclean |
 | Author | https://github.com/Moses-L |
 | ORCID | https://orcid.org/0000-0002-0600-6660 |

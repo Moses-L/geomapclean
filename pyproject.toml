@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moseslukegeomap"
-version = "0.1.0"
+version = "0.1.1"
 description = "Turn raw GIS files (shapefile, GeoJSON, GeoPackage) into clean, publication-ready maps with automatic labels, legend, scale bar and north arrow."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -38,6 +38,7 @@ geomapclean = "moseslukegeomap.cli:main"
 [project.urls]
 Homepage = "https://github.com/Moses-L/geomapclean"
 Issues = "https://github.com/Moses-L/geomapclean/issues"
+"Web app" = "https://moseslukegismap.streamlit.app/"
 
 [tool.setuptools.packages.find]
 where = ["src"]
