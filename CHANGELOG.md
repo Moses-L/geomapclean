@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Use the Zenodo "all versions" DOI (10.5281/zenodo.24010663) in the README, `CITATION.cff` and the About tab. It always resolves to the latest release. Version 0.1.2 had pointed to the DOI of a single earlier release.
+- README explains the difference between the all-versions DOI and a version DOI.
+
 ## 0.1.2
 
 - Zenodo DOI (10.5281/zenodo.24010664) added to the README badge, `CITATION.cff` and the About tab.

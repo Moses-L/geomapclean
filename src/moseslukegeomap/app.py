@@ -126,14 +126,14 @@ Built by **Moses Luke**, an epidemiologist and health information specialist bas
 | Source code | https://github.com/Moses-L/geomapclean |
 | Author | https://github.com/Moses-L |
 | ORCID | https://orcid.org/0000-0002-0600-6660 |
-| DOI | https://doi.org/10.5281/zenodo.24010664 |
+| DOI | https://doi.org/10.5281/zenodo.24010663 |
 | Licence | MIT: free to use, copy and adapt, with the copyright notice kept |
 
 ### Using maps from this tool in your work
 
 - Credit the source of your boundary data in the source line. Boundary files have their own licences.
 - You may mention the tool in your methods, for example: "Maps were produced with {APP_NAME} (geomapclean {__version__}, Luke M.)."
-- Cite the software so readers can find it. APA 7th edition: Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version {__version__}) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010664
+- Cite the software so readers can find it. APA 7th edition: Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version {__version__}) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010663
 - The README on GitHub also gives a BibTeX entry and a step-by-step guide to citing.
 - Say in your figure caption how you grouped the values, because that decides what the colours mean.
 - Report problems or suggest improvements on the GitHub Issues page.

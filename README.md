@@ -3,7 +3,7 @@
 **Clean, labelled, publication-ready maps from raw GIS data.** Upload a zipped shapefile, GeoJSON, GeoPackage or KML and get a finished map: areas coloured by your numbers, names that do not overlap, a legend, scale bar, north arrow and grid labels.
 
 [![tests](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml/badge.svg)](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24010664.svg)](https://doi.org/10.5281/zenodo.24010664)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24010663.svg)](https://doi.org/10.5281/zenodo.24010663)
 
 **Use it online, nothing to install: https://moseslukegismap.streamlit.app/**
 
@@ -350,7 +350,7 @@ pytest
 
 If a map made with this tool appears in a paper, report, thesis or presentation, please cite it. Citing gives credit for the work and lets readers find the exact software you used.
 
-**The permanent identifier (DOI):** [10.5281/zenodo.24010664](https://doi.org/10.5281/zenodo.24010664). This DOI is registered on Zenodo and always points to the latest version. Each release also gets its own version DOI, which you can find on the [Zenodo record](https://doi.org/10.5281/zenodo.24010664) under "Versions". Use the version DOI if you want readers to see the exact release you used.
+**The permanent identifier (DOI):** [10.5281/zenodo.24010663](https://doi.org/10.5281/zenodo.24010663). This is the "all versions" DOI registered on Zenodo. It never changes and always leads to the latest release, so it is the one to cite in most cases. Every release also has its own version DOI, listed in the "Versions" box on the [Zenodo record](https://doi.org/10.5281/zenodo.24010663). Use a version DOI instead if you want readers to see the exact release you used, for example when you need to reproduce a figure.
 
 **Step by step:**
 
@@ -365,7 +365,7 @@ If a map made with this tool appears in a paper, report, thesis or presentation,
 
 **APA 7th edition**
 
-> Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version 0.1.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010664
+> Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version 0.1.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010663
 
 **BibTeX**
 
@@ -374,8 +374,8 @@ If a map made with this tool appears in a paper, report, thesis or presentation,
   author  = {Luke, Moses},
   title   = {geomapclean: Clean, labelled maps from raw GIS files},
   year    = {2026},
-  version = {0.1.2},
-  doi     = {10.5281/zenodo.24010664},
+  version = {0.1.3},
+  doi     = {10.5281/zenodo.24010663},
   url     = {https://github.com/Moses-L/geomapclean}
 }
 ```
@@ -404,7 +404,7 @@ You do not need to know these words to use the tool, but they appear in the app 
 | Classification | How the values are grouped into colour steps: quantiles, equal interval or natural breaks. |
 | Leader line | A thin line from a label to a small area, used when the name cannot fit inside it. |
 | Graticule | The faint grid of latitude and longitude lines with labels on the map edge. |
-| DOI | A permanent web address for a citable object. Ours is 10.5281/zenodo.24010664. |
+| DOI | A permanent web address for a citable object. Ours is 10.5281/zenodo.24010663. |
 
 ## 14. Where to get help
 
