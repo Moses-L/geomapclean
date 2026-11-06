@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moseslukegeomap"
-version = "0.1.1"
+version = "0.1.2"
 description = "Turn raw GIS files (shapefile, GeoJSON, GeoPackage) into clean, publication-ready maps with automatic labels, legend, scale bar and north arrow."
 readme = "README.md"
 requires-python = ">=3.10"

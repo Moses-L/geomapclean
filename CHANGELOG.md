@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Zenodo DOI (10.5281/zenodo.24010664) added to the README badge, `CITATION.cff` and the About tab.
+- README: step-by-step "How to cite" section with APA and BibTeX, a plain-language glossary and a help section.
+
 ## 0.1.1
 
 - README images use absolute links so they display on PyPI.

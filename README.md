@@ -3,6 +3,7 @@
 **Clean, labelled, publication-ready maps from raw GIS data.** Upload a zipped shapefile, GeoJSON, GeoPackage or KML and get a finished map: areas coloured by your numbers, names that do not overlap, a legend, scale bar, north arrow and grid labels.
 
 [![tests](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml/badge.svg)](https://github.com/Moses-L/geomapclean/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24010664.svg)](https://doi.org/10.5281/zenodo.24010664)
 
 **Use it online, nothing to install: https://moseslukegismap.streamlit.app/**
 
@@ -24,6 +25,8 @@ Built by Moses Luke for researchers, epidemiologists and programme teams who hav
 10. [Limits](#10-limits)
 11. [Hosting a public copy](#11-hosting-a-public-copy)
 12. [Development, citing and licence](#12-development-citing-and-licence)
+13. [Plain-language glossary](#13-plain-language-glossary)
+14. [Where to get help](#14-where-to-get-help)
 
 ## 1. Try it in two minutes
 
@@ -343,8 +346,68 @@ pytest
 
 **Boundary data.** The package ships only a small invented demo layer ("Null Island"). The example maps use the UN OCHA / OSGOF Nigeria boundaries (COD-AB, 2019). Check the publisher's terms for any boundary data you use, and credit it on your map.
 
-**Citing.** Use the "Cite this repository" button on GitHub, or the DOI on the release page once it is archived on Zenodo. Suggested wording for methods sections: "Maps were produced with MosesLukeGISmapdeveloper (geomapclean), Luke M."
+### How to cite this tool
+
+If a map made with this tool appears in a paper, report, thesis or presentation, please cite it. Citing gives credit for the work and lets readers find the exact software you used.
+
+**The permanent identifier (DOI):** [10.5281/zenodo.24010664](https://doi.org/10.5281/zenodo.24010664). This DOI is registered on Zenodo and always points to the latest version. Each release also gets its own version DOI, which you can find on the [Zenodo record](https://doi.org/10.5281/zenodo.24010664) under "Versions". Use the version DOI if you want readers to see the exact release you used.
+
+**Step by step:**
+
+1. Check which version you used. In the app it is on the About tab. On the command line run `geomapclean --version`.
+2. Copy one of the formats below and replace the version number if needed.
+3. Put the citation in your reference list. Also say in your methods which classification method you chose (for example quantiles with five classes), because that decides what the colours mean.
+4. Credit the boundary data separately in the source line of your map. The boundary file has its own publisher and licence.
+
+**Sentence for a methods section**
+
+> Maps were produced with MosesLukeGISmapdeveloper (geomapclean version {version}; Luke, 2026).
+
+**APA 7th edition**
+
+> Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version 0.1.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010664
+
+**BibTeX**
+
+```bibtex
+@software{luke_geomapclean_2026,
+  author  = {Luke, Moses},
+  title   = {geomapclean: Clean, labelled maps from raw GIS files},
+  year    = {2026},
+  version = {0.1.2},
+  doi     = {10.5281/zenodo.24010664},
+  url     = {https://github.com/Moses-L/geomapclean}
+}
+```
+
+On GitHub you can also click **Cite this repository** on the right side of the repository page. It reads the `CITATION.cff` file and offers APA and BibTeX automatically.
 
 **Licence.** MIT. See `LICENSE`.
 
 **Author.** Moses Luke. GitHub: [Moses-L](https://github.com/Moses-L). ORCID: [0000-0002-0600-6660](https://orcid.org/0000-0002-0600-6660).
+
+## 13. Plain-language glossary
+
+You do not need to know these words to use the tool, but they appear in the app and in this guide.
+
+| Word | What it means |
+|---|---|
+| Shapefile | A common GIS format. It is not one file but a group of files with the same name (`.shp`, `.shx`, `.dbf`, `.prj`). Always zip them together before uploading. |
+| GeoJSON, GeoPackage, KML | Other GIS formats. Each is a single file, so you upload it as it is. |
+| Layer | One set of shapes inside a file, for example "states" or "districts". Some files hold more than one. |
+| Polygon, line, point | The three kinds of shape. Polygons are areas such as states. Lines are things like roads or rivers. Points are places such as health facilities. |
+| Projection (CRS) | The method used to flatten the round Earth onto a flat map. The tool picks a suitable one for your area automatically. |
+| `.prj` file | The small file that tells the software which projection the data uses. Without it the tool has to guess. |
+| Attribute table | The table of information behind the shapes, one row per shape (name, code, population and so on). |
+| Join | Attaching your own table of numbers to the shapes by matching area names. |
+| Choropleth | A map where areas are coloured according to a value, such as vaccination coverage. |
+| Classification | How the values are grouped into colour steps: quantiles, equal interval or natural breaks. |
+| Leader line | A thin line from a label to a small area, used when the name cannot fit inside it. |
+| Graticule | The faint grid of latitude and longitude lines with labels on the map edge. |
+| DOI | A permanent web address for a citable object. Ours is 10.5281/zenodo.24010664. |
+
+## 14. Where to get help
+
+- Read the [troubleshooting table](#9-troubleshooting) first. Most problems are a missing `.shp`, `.shx` or `.dbf` file, or names that do not match your table.
+- Open an issue at https://github.com/Moses-L/geomapclean/issues. Say which file type you uploaded, what you expected and what happened. Do not attach confidential data.
+- Use the live app at https://moseslukegismap.streamlit.app/ to check whether the problem also happens there.
