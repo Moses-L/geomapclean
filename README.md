@@ -7,6 +7,12 @@
 
 **Use it online, nothing to install: https://moseslukegismap.streamlit.app/**
 
+**Prefer a notebook?** [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Moses-L/geomapclean/blob/main/notebooks/geomapclean_colab.ipynb) Run the tool in your browser with a guided, step-by-step Google Colab notebook. Nothing to install.
+
+### See how it works (30 seconds)
+
+![Walkthrough: raw file to finished map in five steps](https://raw.githubusercontent.com/Moses-L/geomapclean/main/examples/walkthrough.gif)
+
 ![Nigeria geopolitical zones](https://raw.githubusercontent.com/Moses-L/geomapclean/main/examples/gallery_nigeria_zones.png)
 
 Built by Moses Luke for researchers, epidemiologists and programme teams who have boundary files and numbers but do not want to spend an afternoon in desktop GIS software to get a tidy figure. The Python package is called `moseslukegeomap` and the command is `geomapclean`.
@@ -31,6 +37,8 @@ Built by Moses Luke for researchers, epidemiologists and programme teams who hav
 ## 1. Try it in two minutes
 
 **Quickest:** open the live app at https://moseslukegismap.streamlit.app/, switch on the demo in the sidebar, then upload your own file. Nothing is installed.
+
+**In a Google Colab notebook** (no installation, good for workshops): click the Colab badge at the top of this page. The notebook explains every step in plain language. Run each cell from top to bottom with Shift + Enter, change the settings in the forms on the right, and download your map at the end. The notebook file is in the `notebooks` folder of this repository.
 
 **On your own computer** (needed for confidential data): you need Python 3.10 or newer. In a terminal (PowerShell on Windows):
 
@@ -365,7 +373,7 @@ If a map made with this tool appears in a paper, report, thesis or presentation,
 
 **APA 7th edition**
 
-> Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version 0.1.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010663
+> Luke, M. (2026). *geomapclean: Clean, labelled maps from raw GIS files* (Version 0.1.4) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24010663
 
 **BibTeX**
 
@@ -374,7 +382,7 @@ If a map made with this tool appears in a paper, report, thesis or presentation,
   author  = {Luke, Moses},
   title   = {geomapclean: Clean, labelled maps from raw GIS files},
   year    = {2026},
-  version = {0.1.3},
+  version = {0.1.4},
   doi     = {10.5281/zenodo.24010663},
   url     = {https://github.com/Moses-L/geomapclean}
 }

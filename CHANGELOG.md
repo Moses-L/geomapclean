@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- Guided Google Colab notebook (`notebooks/geomapclean_colab.ipynb`): install, choose data, inspect, attach a table, style, draw, download. No installation needed.
+- Animated walkthrough (`examples/walkthrough.gif`) in the README.
+
 ## 0.1.3
 
 - Use the Zenodo "all versions" DOI (10.5281/zenodo.24010663) in the README, `CITATION.cff` and the About tab. It always resolves to the latest release. Version 0.1.2 had pointed to the DOI of a single earlier release.
